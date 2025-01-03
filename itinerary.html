@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northern Italy Trip - Itinerary</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body>
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-4 absolute w-full z-10">
+        <nav class="container mx-auto flex justify-between items-center" x-data="{ open: false }">
+      <a href="#" class="text-lg font-bold">Northern Italy Trip</a>
+      <button @click="open = !open" class="md:hidden focus:outline-none">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path x-show="!open" d="M4 6h16M4 12h16M4 18h16" />
+          <path x-show="open" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-4" :class="{ 'block': open, 'hidden': !open }">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="hover:text-gray-300">Itinerary</a></li>
+        <li><a href="accommodation.html" class="hover:text-gray-300">Accommodation</a></li>
+        <li><a href="#" class="hover:text-gray-300">Travel Tips</a></li>
+        <li><a href="info.html" class="hover:text-gray-300">Info</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-24">
+    <section id="itinerary" class="container mx-auto py-12">
+      <h1 class="text-4xl font-bold mb-8 text-blue-500">Itinerary</h1>
+      <div class="space-y-4" x-data="{ open: [] }">
+        <div class="border rounded-lg overflow-hidden">
+          <button @click="open[0] = !open[0]" class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Day 1: Arrive in Milan</h2>
+            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[0] }" viewBox="0 0 24 24">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+            </svg>
+          </button>
+          <div class="px-6 py-4" x-show="open[0]">
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Settle into your accommodation</li>
+              <li>Explore Milan's historic center</li>
+              <li>Visit the Duomo di Milano</li>
+              <li>Take the funicular up to Brunate for panoramic views</li>
+              <li>Evening stroll along the lakefront promenade</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border rounded-lg overflow-hidden">
+          <button @click="open[1] = !open[1]" class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Day 2: Lake Como Villages</h2>
+            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[1] }" viewBox="0 0 24 24">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+            </svg>
+          </button>
+          <div class="px-6 py-4" x-show="open[1]">
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Take a ferry to Bellagio (if not staying there)</li>
+              <li>Explore Villa Carlotta with its beautiful gardens</li>
+              <li>Visit the picturesque town of Varenna</li>
+              <li>Dinner in a lakeside restaurant</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border rounded-lg overflow-hidden">
+          <button @click="open[2] = !open[2]" class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Day 3: Lake Maggiore Day Trip</h2>
+            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[2] }" viewBox="0 0 24 24">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+            </svg>
+          </button>
+          <div class="px-6 py-4" x-show="open[2]">
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Visit the stunning Borromean Islands</li>
+              <li>Explore Isola Bella's baroque palace and gardens</li>
+              <li>Stop at Isola Madre for its exotic gardens</li>
+              <li>Return to Como in the evening</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border rounded-lg overflow-hidden">
+          <button @click="open[3] = !open[3]" class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Day 4: Lake Lugano (Switzerland)</h2>
+            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[3] }" viewBox="0 0 24 24">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+            </svg>
+          </button>
+          <div class="px-6 py-4" x-show="open[3]">
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Take a short drive to Lake Lugano</li>
+              <li>Explore the charming city center</li>
+              <li>Take the funicular up Monte San Salvatore</li>
+              <li>Optional: visit the chocolate museum</li>
+              <li>Return to Como for dinner</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border rounded-lg overflow-hidden">
+          <button @click="open[4] = !open[4]" class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Day 5: Villa life and relaxation</h2>
+            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[4] }" viewBox="0 0 24 24">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+            </svg>
+          </button>
+          <div class="px-6 py-4" x-show="open[4]">
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Visit Villa del Balbianello (where Star Wars and James Bond were filmed)</li>
+              <li>Take a final boat trip on Lake Como</li>
+              <li>Shop in the silk stores of Como</li>
+              <li>Farewell dinner with lake views</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
