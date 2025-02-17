@@ -28,110 +28,104 @@
     </nav>
   </header>
 
-  <main class="pt-24">
-    <section id="itinerary" class="container mx-auto py-12">
-      <h1 class="text-4xl font-bold mb-8 text-blue-500">Itinerary</h1>
-      <div class="space-y-4" x-data="{ open: [] }">
-        <div class="border rounded-lg overflow-hidden">
-          <button @click="open[0] = !open[0]"
-            class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Day 1: Arrive in Milan</h2>
-            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[0] }" viewBox="0 0 24 24">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-            </svg>
-          </button>
-          <div class="px-6 py-4" x-show="open[0]">
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Settle into your accommodation</li>
-              <li>Explore Milan's historic center</li>
-              <li>Visit the Duomo di Milano</li>
-              <li>Take the funicular up to Brunate for panoramic views</li>
-              <li>Evening stroll along the lakefront promenade</li>
-            </ul>
-          </div>
-        </div>
-        <div class="border rounded-lg overflow-hidden">
-          <button @click="open[1] = !open[1]"
-            class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Day 2: Lake Como Villages</h2>
-            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[1] }" viewBox="0 0 24 24">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-            </svg>
-          </button>
-          <div class="px-6 py-4" x-show="open[1]">
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Take a ferry to Bellagio (if not staying there)</li>
-              <li>Explore Villa Carlotta with its beautiful gardens</li>
-              <li>Visit the picturesque town of Varenna</li>
-              <li>Dinner in a lakeside restaurant</li>
-            </ul>
-          </div>
-        </div>
-        <div class="border rounded-lg overflow-hidden">
-          <button @click="open[2] = !open[2]"
-            class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Day 3: Lake Maggiore Day Trip</h2>
-            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[2] }" viewBox="0 0 24 24">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-            </svg>
-          </button>
-          <div class="px-6 py-4" x-show="open[2]">
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Visit the stunning Borromean Islands</li>
-              <li>Explore Isola Bella's baroque palace and gardens</li>
-              <li>Stop at Isola Madre for its exotic gardens</li>
-              <li>Return to Como in the evening</li>
-            </ul>
-          </div>
-        </div>
-        <div class="border rounded-lg overflow-hidden">
-          <button @click="open[3] = !open[3]"
-            class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Day 4: Lake Lugano (Switzerland)</h2>
-            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[3] }" viewBox="0 0 24 24">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-            </svg>
-          </button>
-          <div class="px-6 py-4" x-show="open[3]">
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Take a short drive to Lake Lugano</li>
-              <li>Explore the charming city center</li>
-              <li>Take the funicular up Monte San Salvatore</li>
-              <li>Optional: visit the chocolate museum</li>
-              <li>Return to Como for dinner</li>
-            </ul>
-          </div>
-        </div>
-        <div class="border rounded-lg overflow-hidden">
-          <button @click="open[4] = !open[4]"
-            class="bg-gray-200 px-6 py-4 w-full text-left flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Day 5: Villa life and relaxation</h2>
-            <svg class="h-6 w-6 fill-current" :class="{ 'transform rotate-180': open[4] }" viewBox="0 0 24 24">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-            </svg>
-          </button>
-          <div class="px-6 py-4" x-show="open[4]">
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Visit Villa del Balbianello (where Star Wars and James Bond were filmed)</li>
-              <li>Take a final boat trip on Lake Como</li>
-              <li>Shop in the silk stores of Como</li>
-              <li>Farewell dinner with lake views</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-8 text-gray-800">Northern Italy Trip Suggestions - May 18-23, 2025</h1>
+        
+        <div class="space-y-8">
+            <!-- Suggestion 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Suggestion 1: Base City - Lake Como (Varenna)</h2>
+                <p class="text-gray-700 mb-4">Focuses on the Lake Como region, offering easy access to stunning scenery, hiking trails, charming villages, and a day trip to Switzerland. Perfect balance of outdoor activities with cultural experiences.</p>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="font-semibold text-gray-800">Key Features:</h3>
+                        <ul class="list-disc ml-4 text-gray-600">
+                            <li>Centralized location in Varenna with good ferry connections</li>
+                            <li>Extensive exploration of Lake Como area</li>
+                            <li>Day trip to Switzerland (Lugano and Bellinzona)</li>
+                            <li>Focus on hiking and outdoor activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-  <script>
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navMenu = document.getElementById('nav-menu');
+            <!-- Suggestion 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Suggestion 2: Base City - Varenna</h2>
+                <p class="text-gray-700 mb-4">A comprehensive plan centered in Varenna, featuring a mix of lake activities, Swiss exploration, and visits to multiple Italian lakes.</p>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="font-semibold text-gray-800">Key Features:</h3>
+                        <ul class="list-disc ml-4 text-gray-600">
+                            <li>Exploration of Lake Como, Lake Orta, and Lake Maggiore</li>
+                            <li>Visit to Lugano and Gandria in Switzerland</li>
+                            <li>Mix of hiking and cultural activities</li>
+                            <li>Emphasis on scenic locations and viewpoints</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-    mobileMenuBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('hidden');
-    });
-  </script>
+            <!-- Suggestion 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Suggestion 3: Base City - Bellagio</h2>
+                <p class="text-gray-700 mb-4">A balanced itinerary using Bellagio as the base, incorporating lake activities, mountain views, and Swiss culture.</p>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="font-semibold text-gray-800">Key Features:</h3>
+                        <ul class="list-disc ml-4 text-gray-600">
+                            <li>Private boat tours of Lake Como</li>
+                            <li>Visit to Lugano with Monte San Salvatore excursion</li>
+                            <li>Exploration of Lake Maggiore</li>
+                            <li>Combination of hiking and luxury experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suggestion 4 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Suggestion 4: Base City - Como</h2>
+                <p class="text-gray-700 mb-4">A detailed plan using Como as the central location, offering easy access to multiple lakes and Switzerland while maintaining a single home base.</p>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="font-semibold text-gray-800">Key Features:</h3>
+                        <ul class="list-disc ml-4 text-gray-600">
+                            <li>Extensive exploration of Como city and surrounding areas</li>
+                            <li>Day trip to Lugano, Switzerland</li>
+                            <li>Visit to Lake Iseo and Monte Isola</li>
+                            <li>Balance of urban comforts and outdoor adventures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-6 mt-8">
+                <h3 class="text-xl font-semibold text-blue-800 mb-4">Common Elements Across All Suggestions:</h3>
+                <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                    <li>Car rental from Milan Malpensa Airport</li>
+                    <li>Single base location to minimize hotel changes</li>
+                    <li>Mix of outdoor activities and cultural experiences</li>
+                    <li>Day trip to Switzerland</li>
+                    <li>Focus on lakeside locations and scenic views</li>
+                    <li>Combination of hiking opportunities and town exploration</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 text-sm text-gray-500">
+            <p>Last updated: <span id="currentDate"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('currentDate').textContent = luxon.DateTime.now().toFormat('MMMM d, yyyy');
+    </script>
 </body>
-
 </html>
