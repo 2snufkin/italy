@@ -1,5 +1,5 @@
 
-## Suggestion 1 Base: Lake Como |Gemini
+## Suggestion 1 Base: Lake Como | By Gemini
 Northern Italy Adventure: May 18-23 (Base: Lake Como)
 
 This itinerary focuses on the Lake Como region as a base, offering easy access to stunning scenery, hiking trails, charming villages, and a day trip to Switzerland. It balances outdoor activities with cultural experiences, suitable for a group of active friends in their 40s.
@@ -90,7 +90,7 @@ Notes:
     Be prepared for varying weather conditions. Layers are always a good idea.
     Enjoy the beautiful scenery, delicious food, and relaxed atmosphere of Northern Italy!
 
-# Suggestion 2: Chatgpt | Varenna
+# Suggestion 2: Varenna | By Chatgpt
 
 Base City Recommendation: Varenna (Lake Como)
 
@@ -168,7 +168,7 @@ Day 6: Departure
     Fly home.
 
 
-# Suggestion 3: Claude | Bellagio
+# Suggestion 3: Bellagio | By Claude
 
 Day 1 (May 18) - Arrival & Transfer to Base
 - Arrival at Milan Malpentino Airport
@@ -226,7 +226,7 @@ Additional Tips:
 Would you like me to provide more specific details about any part of the itinerary or adjust it based on particular interests?
 
 
-#Suggestion 4: Perplexity AI | Bellagio
+# Suggestion 4: Bellagio | Perplexity AI 
 
 ## Day 1 (May 18): Arrival in Milan and Lake Como
 
@@ -281,16 +281,16 @@ Citations:
 [8] https://sixtyandme.com/dream-trip-northern-italy/
 
 
-Suggestion 5: DeepSeek | Como
+# Suggestion 5:Como |DeepSeek
 
 ### Northern Italy Itinerary: May 18 - May 23  
 **Group:** 5-6 friends, 40 years old, capable of hiking  
 **Focus:** Scenic lakes, charming villages, outdoor exploration, and cultural experiences  
 **Base City:** **Como** (central location for exploring Lake Como, Lake Lugano, and a brief trip to Switzerland)  
 
----
 
-### **Day 1: May 18 - Arrival in Milan and Transfer to Como**  
+
+## **Day 1: May 18 - Arrival in Milan and Transfer to Como**  
 - **Morning:**  
   - Arrive at Milan Malpensa Airport (MXP).  
   - **Car Rental Recommendation:**  
@@ -310,7 +310,7 @@ Suggestion 5: DeepSeek | Como
 
 ---
 
-### **Day 2: May 19 - Lake Como Exploration**  
+## **Day 2: May 19 - Lake Como Exploration**  
 - **Morning:**  
   - Breakfast at your hotel.  
   - Drive to **Bellagio** (1-hour drive or ferry ride).  
@@ -328,7 +328,7 @@ Suggestion 5: DeepSeek | Como
 
 ---
 
-### **Day 3: May 20 - Day Trip to Switzerland (Lugano)**  
+## **Day 3: May 20 - Day Trip to Switzerland (Lugano)**  
 - **Morning:**  
   - Breakfast at your hotel.  
   - Drive to **Lugano, Switzerland** (1-hour drive, ~35 km).  
@@ -345,7 +345,7 @@ Suggestion 5: DeepSeek | Como
 
 ---
 
-### **Day 4: May 21 - Hiking and Lake Iseo**  
+## **Day 4: May 21 - Hiking and Lake Iseo**  
 - **Morning:**  
   - Breakfast at your hotel.  
   - Drive to **Lake Iseo** (1.5-hour drive, ~90 km).  
