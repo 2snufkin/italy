@@ -1,80 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Northern Italy Trip - Contact</title>
+  <title>Northern Italy Trip - Info</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-
 </head>
-<body>
-  <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white  absolute w-full z-10">
-    <nav class="container mx-auto flex justify-between items-center" x-data="{ open: false }">
+
+<body class="bg-gray-50">
+  <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-4 fixed w-full top-0 z-10">
+    <nav class="container mx-auto flex justify-between items-center px-4">
       <a href="#" class="text-lg font-bold">Northern Italy Trip</a>
-      <button @click="open = !open" class="md:hidden focus:outline-none">
+      <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
         <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-          <path x-show="!open" d="M4 6h16M4 12h16M4 18h16" />
-          <path x-show="open" d="M6 18L18 6M6 6l12 12" />
+          <path d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
-      <ul class="hidden md:flex space-x-4" :class="{ 'block': open, 'hidden': !open }">
+      <ul id="nav-menu" class="hidden md:flex space-x-4">
         <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
         <li><a href="itinerary.html" class="hover:text-gray-300">Itinerary</a></li>
-        <li><a href="accommodation.html" class="hover:text-gray-300">Accommodation</a></li>
-        <li><a href="tips.html" class="hover:text-gray-300">Travel Tips</a></li>
-        <li><a href="info.html" class="hover:text-gray-300">Info</a></li>
-        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+        <li><a href="#" class="font-medium">Info</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="max-w-4xl mx-auto space-y-4 py-12">
-   
-   
+  <div class="max-w-4xl mx-auto py-12 mt-20 px-4">
+    <h1 class="text-3xl font-bold mb-8 text-center text-indigo-800">Lake Como Trip - Activity & Wellness Information
+    </h1>
 
-    <!-- Card 2 -->
-    <div class="bg-white shadow-md rounded-lg p-4 flex">
-        <img src="car_image_placeholder.jpg" alt="Opel Mokka GPS" class="w-32 h-24 object-cover rounded">
-        <div class="ml-4 flex flex-col justify-between">
-            <div>
-                <h2 class="text-lg font-semibold text-pink-600">Opel Mokka GPS</h2>
-                <p class="text-sm text-gray-600">or similar SUV</p>
-            </div>
-            <div class="text-sm text-gray-600">
-                <p>5 seats &bull; Manual &bull; 1 Large bag &bull; 1 Small bag</p>
-                <p>Unlimited mileage</p>
-                <p>Milan Malpensa Airport - In Terminal</p>
-            </div>
-        </div>
-        <div class="ml-auto text-right flex flex-col justify-between">
-            <div class="text-blue-700 font-medium">Good <span class="text-white bg-blue-500 px-1 py-0.5 rounded">7.5</span></div>
-            <div class="text-lg font-bold text-gray-800">&euro;158</div>
-            <p class="text-sm text-green-500">Free cancellation</p>
-        </div>
+    <!-- Accommodation Card -->
+    <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-md mb-6">
+      <h2 class="text-xl font-bold mb-4 text-gray-800">Accommodation</h2>
+      <div class="flex items-center">
+        <svg class="h-5 w-5 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+          </path>
+        </svg>
+        <span class="font-medium">Villa Biber – Casasco d'Intelvi</span>
+      </div>
+      <p class="mt-2 text-gray-600 text-sm">Additional information available in the 'Book of the House' PDFs</p>
     </div>
 
-    <!-- Card 3 -->
-    <div class="bg-white shadow-md rounded-lg p-4 flex">
-        <img src="car_image_placeholder.jpg" alt="Volkswagen T-Roc" class="w-32 h-24 object-cover rounded">
-        <div class="ml-4 flex flex-col justify-between">
-            <div>
-                <h2 class="text-lg font-semibold text-pink-600">Volkswagen T-Roc</h2>
-                <p class="text-sm text-gray-600">or similar SUV</p>
-            </div>
-            <div class="text-sm text-gray-600">
-                <p>5 seats &bull; Manual &bull; 3 Large bags</p>
-                <p>Unlimited mileage</p>
-                <p>Milan Malpensa Airport - In Terminal</p>
-            </div>
-        </div>
-        <div class="ml-auto text-right flex flex-col justify-between">
-            <div class="text-blue-700 font-medium">Good <span class="text-white bg-blue-500 px-1 py-0.5 rounded">7.5</span></div>
-            <div class="text-lg font-bold text-gray-800">&euro;191</div>
-            <p class="text-sm text-green-500">Free cancellation</p>
-        </div>
-    </div>
-</div>  
+    <!-- Spas & Pools Card -->
+    <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-md mb-6">
+      <h2 class="text-xl font-bold mb-4 text-gray-800">Spas & Pools</h2>
 
-  
+      <div class="mb-4">
+        <p class="text-gray-700"><span class="font-medium text-indigo-700">Note:</span> No public thermal spas are
+          available in the immediate Lake Como area.</p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold text-gray-800 mb-2">Nearby Options in Switzerland:</h3>
+        <ul class="space-y-2 pl-5">
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Splash and SPA</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.splashespa.ch/en/" class="text-blue-600 hover:underline"
+                  target="_blank">www.splashespa.ch/en/</a>
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">California Acquapark</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://california-acquapark.ch/parco-acquatico/" class="text-blue-600 hover:underline"
+                  target="_blank">california-acquapark.ch/parco-acquatico/</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Lake Como Hotel Spas (accessible to external guests):</h3>
+        <ul class="space-y-2 pl-5">
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Eforea Spa</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://lakecomo.eforeaspa.com/en/wellness-center" class="text-blue-600 hover:underline"
+                  target="_blank">lakecomo.eforeaspa.com/en/wellness-center</a>
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Hotel Imperiale Spa</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://hotelimperialecomo.it/en/benessere/spa.html" class="text-blue-600 hover:underline"
+                  target="_blank">hotelimperialecomo.it/en/benessere/spa.html</a>
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Mandarin Oriental Spa</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.mandarinoriental.com/en/lake-como/blevio/wellness"
+                  class="text-blue-600 hover:underline"
+                  target="_blank">www.mandarinoriental.com/en/lake-como/blevio/wellness</a>
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Nuvolé Garden Spa</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.nuvolegarden.com/spa/en" class="text-blue-600 hover:underline"
+                  target="_blank">www.nuvolegarden.com/spa/en</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-gray-200">
+        <p class="text-gray-700 italic text-sm">Note: Some outdoor lake lidos have pools, weather permitting.</p>
+      </div>
+    </div>
+
+    <!-- Boat Trips Card -->
+    <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-md mb-6">
+      <h2 class="text-xl font-bold mb-4 text-gray-800">Boat Trips</h2>
+
+      <div class="mb-4">
+        <h3 class="font-semibold text-gray-800 mb-2">Public Transportation:</h3>
+        <div class="pl-5 mb-3">
+          <div class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Public boats and car ferries</span>
+              <p class="text-sm text-gray-600">
+                Available to various locations (e.g., Bellagio)
+              </p>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+                  class="text-blue-600 hover:underline"
+                  target="_blank">www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Private Rental Options:</h3>
+        <p class="text-gray-700 text-sm italic mb-2">Note: Cost increases with driver</p>
+        <ul class="space-y-2 pl-5">
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Rent a Boat Turati</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.rentaboatturati.com/" class="text-blue-600 hover:underline"
+                  target="_blank">www.rentaboatturati.com</a>
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Hiring a Boat</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.hiringaboat.com/en/" class="text-blue-600 hover:underline"
+                  target="_blank">www.hiringaboat.com/en</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Activities Card -->
+    <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-md mb-6">
+      <h2 class="text-xl font-bold mb-4 text-gray-800">Activities</h2>
+
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Electric Mountain Bikes:</h3>
+        <p class="text-gray-700 text-sm italic mb-2">Available for rent with or without guide</p>
+        <ul class="space-y-2 pl-5">
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">eBike Valle Intelvi</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.ebikevalleintelvi.it/" class="text-blue-600 hover:underline"
+                  target="_blank">www.ebikevalleintelvi.it</a>
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div>
+              <span class="font-medium">Guti Bike Rent</span>
+              <p class="text-sm text-gray-600">
+                <a href="https://www.gutibikerent.com/" class="text-blue-600 hover:underline"
+                  target="_blank">www.gutibikerent.com</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tips Card -->
+    <div class="bg-indigo-50 rounded-lg p-6 border border-indigo-200 shadow-md">
+      <h2 class="text-xl font-bold mb-4 text-indigo-800">Travel Tips</h2>
+
+      <ul class="space-y-3 pl-5">
+        <li class="flex items-start">
+          <svg class="h-5 w-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span class="text-gray-700">Avoid renting large cars; some valley roads can be narrow.</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="h-5 w-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span class="text-gray-700">Further details available in the 'Book of the House' PDFs.</span>
+        </li>
+      </ul>
+    </div>
+
+    <footer class="mt-8 text-center text-gray-500 text-sm">
+      <p>Last updated: May 2025</p>
+    </footer>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      menu.classList.toggle('flex-col');
+      menu.classList.toggle('absolute');
+      menu.classList.toggle('top-16');
+      menu.classList.toggle('right-0');
+      menu.classList.toggle('bg-gradient-to-r');
+      menu.classList.toggle('from-indigo-500');
+      menu.classList.toggle('to-pink-500');
+      menu.classList.toggle('w-full');
+      menu.classList.toggle('p-4');
+    });
+  </script>
 </body>
+
 </html>
