@@ -12,7 +12,22 @@
   </style>
 </head>
 <body>
-
+  <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-4 fixed w-full top-0 z-10">
+    <nav class="container mx-auto flex justify-between items-center px-4">
+      <a href="#" class="text-lg font-bold">Northern Italy Trip</a>
+      <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul id="nav-menu" class="hidden md:flex space-x-4">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="hover:text-gray-300">Itinerary</a></li>
+        <li><a href="info.html" class="hover:text-gray-300">Info</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section id="home" class="bg-cover bg-center h-screen bg-opacity-75" style="background-image: url('northern-italy.jpg')">
